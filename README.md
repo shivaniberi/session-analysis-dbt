@@ -49,6 +49,20 @@ This project demonstrates how to set up a dbt (Data Build Tool) project using Sn
            tests:
          - not_null
          - unique
+   - name: my_second_dbt_model
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: session_summary
+    columns:
+      - name: sessionId
+        tests:
+          - not_null
+          - unique
+
    ```
 
 
