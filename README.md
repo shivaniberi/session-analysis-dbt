@@ -1,8 +1,39 @@
-# session-analysis-dbt
-1)Add a "Setup" section: Explain the environment setup, such as installing dbt and the Snowflake connector.
-2)Include the commands in sequential steps for:
-3)Installing dependencies
-4)Initializing the dbt project
-5)Setting up input and output models
-6)Creating snapshots
-7)Running tests
+
+# dbt-Snowflake Session Analysis
+
+## Project Overview
+This project demonstrates how to set up a dbt (Data Build Tool) project using Snowflake for session analysis, including creating input and output models, snapshots, and adding tests.
+
+## Setup Instructions
+
+### Prerequisites
+- Ensure you have `dbt` and the `dbt-snowflake` connector installed.
+
+### Commands
+
+1. **Install dbt Snowflake**:
+   ```bash
+   pip3 install dbt-snowflake
+   ```
+
+2. **Initialize dbt Project**:
+   ```bash
+   dbt init <project_name>
+   ```
+
+3. **Create Models and Snapshots**:
+   ```bash
+   touch models/input/user_session_channel.sql
+   touch models/input/session_timestamp.sql
+   touch models/output/session_summary.sql
+   mkdir snapshots
+   touch snapshots/snapshot_session_summary.sql
+   ```
+
+4. **Run Models**:
+   ```bash
+   dbt run
+   ```
+
+## Additional Notes
+- Include additional information or troubleshooting tips here if necessary.
