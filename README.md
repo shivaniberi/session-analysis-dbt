@@ -37,7 +37,7 @@ This project demonstrates how to set up a dbt (Data Build Tool) project using Sn
 
 5. **Create Schema File**:
    ```bash
-  touch models/schema.yml
+   touch models/schema.yml
    ```
    
 
