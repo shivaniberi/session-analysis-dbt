@@ -35,5 +35,16 @@ This project demonstrates how to set up a dbt (Data Build Tool) project using Sn
    dbt run
    ```
 
+5. **Create Schema File**:
+   ```bash
+  touch models/schema.yml
+   ```
+   
+
 ## Additional Notes
 - Include additional information or troubleshooting tips here if necessary.
+- To run the tests on the sessionId field in session_summary, use the following command:
+ ```bash
+   dbt test
+   ```
+
