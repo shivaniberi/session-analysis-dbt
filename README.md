@@ -42,14 +42,13 @@ This project demonstrates how to set up a dbt (Data Build Tool) project using Sn
 6. **Edit models/schema.yml to add tests for sessionId in session_summary:**:
    ```bash
    version: 2
-
-models:
-  - name: session_summary
-    columns:
-      - name: sessionId
-        tests:
-          - not_null
-          - unique
+   models:
+     - name: session_summary
+       columns:
+         - name: sessionId
+           tests:
+         - not_null
+         - unique
    ```
 
 
