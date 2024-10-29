@@ -18,7 +18,7 @@ This project demonstrates how to set up a dbt (Data Build Tool) project using Sn
 
 2. **Initialize dbt Project**:
    ```bash
-   dbt init <project_name>
+   dbt init build_mau
    ```
 
 3. **Create Models and Snapshots**:
