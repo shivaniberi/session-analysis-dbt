@@ -39,7 +39,19 @@ This project demonstrates how to set up a dbt (Data Build Tool) project using Sn
    ```bash
    touch models/schema.yml
    ```
-   
+6. **Edit models/schema.yml to add tests for sessionId in session_summary:**:
+   ```bash
+   version: 2
+
+models:
+  - name: session_summary
+    columns:
+      - name: sessionId
+        tests:
+          - not_null
+          - unique
+   ```
+
 
 ## Additional Notes
 - Include additional information or troubleshooting tips here if necessary.
